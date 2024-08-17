@@ -1,0 +1,155 @@
+body {
+  background-color: rgb(108, 107, 112);
+}
+#music {
+  margin-left: 650px;
+  border: 2px solid;
+  font-family: "Roboto";
+  font-size: 18px;
+  cursor: pointer;
+}
+#stop-music {
+  border: 2px solid;
+  font-family: "Roboto";
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+#player-board {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.object-hp {
+  font-family: "Lora";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.button-skill {
+  font-family: "Roboto";
+  font-size: 18px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  box-shadow: 1px 2px 4px;
+  cursor: pointer;
+  background-color: rgb(243, 243, 243);
+}
+.button-skill:hover {
+  background-color: rgb(206, 206, 206);
+}
+.sp-cost-skill1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  left: 170px;
+  top: 170px;
+}
+.sp-cost-skill2 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  left: 170px;
+  top: 270px;
+}
+.sp-cost-skill3 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  left: 170px;
+  top: 370px;
+}
+.sp-cost-skill4 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  left: 170px;
+  top: 470px;
+}
+#max-sp {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 28px;
+  position: absolute;
+  left: 370px;
+  top: 270px;
+}
+#resetBtn {
+  font-family: "Roboto";
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+#resetBtn:hover {
+  background-color: rgb(206, 206, 206);
+}
+#monster-board {
+  text-align: center;
+}
+#monster-image {
+  width: 500px;
+}
+.popup-info {
+  font-size: 30px;
+}
+.player-damage-css {
+  margin-top: -430px;
+  margin-left: 600px;
+  opacity: 0;
+}
+.monster-damage-css {
+  margin-left: 600px;
+  opacity: 0;
+}
+.recovery-css {
+  margin-left: 600px;
+  cursor: default;
+  opacity: 0;
+}
+.no-skill-points-css {
+  margin-left: 600px;
+  opacity: 0;
+}
+
+.game-over {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  font-size: 200px;
+  background-color: black;
+  color: rgb(180, 3, 3);
+  opacity: 0;
+}
+.victory {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  font-size: 200px;
+  background-color: black;
+  color: green;
+  opacity: 0;
+}
+.claws-image {
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  left: 450px;
+  background: none;
+}
+.opacity-visible {
+  opacity: 1;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rpg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="myMusic" loop><source src="Veiled-in-Black.mp3" /></audio>
+    <button id="music" onclick="startMusic()">Play music</button>
+    <button id="stop-music" onclick="musicPause()">Stop music</button>
+    <div id="game-board">
+      <div id="player-board">
+        <div id="player-hp" class="object-hp ">Player HP: 100</div>
+        <button id="player-atak" class="button-skill">Attack</button>
+        <button id="player-skill1" class="button-skill">Sword swipe</button>
+        <button id="player-skill2" class="button-skill">Sword dance</button>
+        <button id="player-skill3" class="button-skill">
+          Sword anihilation
+        </button>
+        <button id="player-skill4" class="button-skill">Heal</button>
+        <div class="sp-cost-skill1">SP cost 1</div>
+        <div class="sp-cost-skill2">SP cost 2</div>
+        <div class="sp-cost-skill3">SP cost 3</div>
+        <div class="sp-cost-skill4">SP cost 1</div>
+        <div id="max-sp">SP: 5</div>
+      </div>
+      <div id="monster-board">
+        <div id="monster-hp" class="object-hp">Monster HP: 1000</div>
+        <img id="monster-image" src="potwor_447899-35577.avif" />
+      </div>
+    </div>
+    <div><button id="resetBtn" class="restartBtn">Restart</button></div>
+    <p id="player-damage" class="popup-info player-damage-css">
+      Player damage: 20
+    </p>
+    <p id="monster-damage" class="popup-info monster-damage-css">
+      Monster damage: 10
+    </p>
+    <p id="recovery" class="popup-info recovery-css">Recovered: 30 hp</p>
+    <p id="no-skill-points" class="popup-info no-skill-points-css">
+      Not enough skill points!
+    </p>
+
+    <div id="gm-over" class="game-over">GAME OVER</div>
+    <div id="win-game" class="victory ">VICTORY</div>
+
+    <script src="rpg.js"></script>
+  </body>
+</html>
